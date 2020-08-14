@@ -2,7 +2,7 @@
 
 A Customizable_date_picker
 
-<div style="text-align:center"><img src="https://github.com/achreffaidi/customizable_date_picker/blob/master/doc/images/blue.gif" width="300"/></div>
+<div style="text-align:center"><img src="https://raw.githubusercontent.com/achreffaidi/customizable_date_picker/master/doc/images/blue.git" width="300"/></div>
 
 ## Features
 
@@ -17,7 +17,7 @@ In the `pubspec.yaml` of your flutter project, add the following dependency:
 ```yaml
 dependencies:
   ...
-  customizable_date_picker: "^0.0.1"
+  customizable_date_picker: "^0.0.3"
 ```
 
 In your library add the following import:
@@ -74,7 +74,9 @@ CustomDatePickerController _controller = new CustomDatePickerController();
   }
 ```
 
-<div style="text-align:center"><img src="https://github.com/achreffaidi/customizable_date_picker/blob/master/doc/images/default.gif" width="300"/></div>
+
+<div style="text-align:center"><img src="https://raw.githubusercontent.com/achreffaidi/customizable_date_picker/master/doc/images/default.git" width="300"/></div>
+
 
 You can find the complete example in the [Example](https://github.com/achreffaidi/customizable_date_picker/tree/master/example) project.
 
@@ -103,9 +105,11 @@ You can specify how every part of the Widget should be built:
   }
 ```
 
-<div style="text-align:center"><img src="https://github.com/achreffaidi/customizable_date_picker/blob/master/doc/images/blue.gif" width="300"/></div>
+<div style="text-align:center"><img src="https://raw.githubusercontent.com/achreffaidi/customizable_date_picker/master/doc/images/blue.git" width="300"/></div>
 
-<div style="text-align:center"><img src="https://github.com/achreffaidi/customizable_date_picker/blob/master/doc/images/pink.gif" width="300"/></div>
+
+<div style="text-align:center"><img src="https://raw.githubusercontent.com/achreffaidi/customizable_date_picker/master/doc/images/pink.git" width="300"/></div>
+
 
 You can find the complete example in the [Example](https://github.com/achreffaidi/customizable_date_picker/tree/master/example) project.
 
@@ -150,7 +154,8 @@ You can find the complete example in the [Example](https://github.com/achreffaid
    }
 ```
 
-<div style="text-align:center"><img src="https://github.com/achreffaidi/customizable_date_picker/blob/master/doc/images/popup.gif" width="300"/></div>
+<div style="text-align:center"><img src="https://raw.githubusercontent.com/achreffaidi/customizable_date_picker/master/doc/images/popup.git" width="300"/></div>
+
 
 You can find the complete example in the [Example](https://github.com/achreffaidi/customizable_date_picker/tree/master/example) project.
 
@@ -177,7 +182,7 @@ You can also set Data using
 controler.setDayData(DateTime date, dynamic data)
 ```
 
-<div style="text-align:center"><img src="https://github.com/achreffaidi/customizable_date_picker/blob/master/doc/images/dynamic.gif" width="300"/></div>
+<div style="text-align:center"><img src="https://raw.githubusercontent.com/achreffaidi/customizable_date_picker/master/doc/images/dynamic.git" width="300"/></div>
 
 You can find the complete example in the [Example](https://github.com/achreffaidi/customizable_date_picker/tree/master/example) project.
 
