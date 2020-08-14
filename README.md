@@ -1,6 +1,7 @@
 # customizable_date_picker
 
 A Customizable_date_picker
+
 <img src="https://github.com/achreffaidi/customizable_date_picker/blob/master/doc/images/blue.gif" width="300"/>
 
 ## Features
@@ -48,6 +49,12 @@ CustomDatePickerController _controller = new CustomDatePickerController();
   }
 ```
 
+<img src="https://github.com/achreffaidi/customizable_date_picker/blob/master/doc/images/default.gif" width="300"/>
+
+You can find the complete example in the [Example](https://github.com/achreffaidi/customizable_date_picker/tree/master/example) project.
+
+
+
 ## Using Custom Builder
 
 You can specify how every part of the Widget should be built: 
@@ -70,7 +77,12 @@ You can specify how every part of the Widget should be built:
     );
   }
 ```
-You can find the complete example in the [Example](https://github.com/letsar/flutter_sticky_header/tree/master/example) project.
+
+<img src="https://github.com/achreffaidi/customizable_date_picker/blob/master/doc/images/blue.gif" width="300"/>
+
+<img src="https://github.com/achreffaidi/customizable_date_picker/blob/master/doc/images/pink.gif" width="300"/>
+
+You can find the complete example in the [Example](https://github.com/achreffaidi/customizable_date_picker/tree/master/example) project.
 
 ## Using dynamic Data
 
@@ -94,11 +106,14 @@ You can also set Data using
 ```dart
 controler.setDayData(DateTime date, dynamic data)
 ```
-You can find the complete example in the [Example](https://github.com/letsar/flutter_sticky_header/tree/master/example) project.
+
+<img src="https://github.com/achreffaidi/customizable_date_picker/blob/master/doc/images/dynamic.gif" width="300"/>
+
+You can find the complete example in the [Example](https://github.com/achreffaidi/customizable_date_picker/tree/master/example) project.
 
 ## Changelog
 
-Please see the [Changelog](https://github.com/letsar/flutter_sticky_header/blob/master/CHANGELOG.md) page to know what's recently changed.
+Please see the [Changelog](https://github.com/achreffaidi/customizable_date_picker/blob/master/CHANGELOG.md) page to know what's recently changed.
 
 ## Contributions
 
