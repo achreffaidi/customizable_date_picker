@@ -331,11 +331,14 @@ class CustomDatePickerController {
       for (CustomDay day in month.days) {
         if (day.date.isAtTheSameDayAs(date) && !day.hidden) {
           day.data = data;
-          datePicker.notify();
+          notify();
           return true;
         }
       }
     }
     return false;
+  }
+  void notify(){
+    datePicker.notify();
   }
 }

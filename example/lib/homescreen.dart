@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'testScreens/business.dart';
 import 'testScreens/default.dart';
 import 'testScreens/pink.dart';
+import 'testScreens/popup.dart';
 import 'testScreens/spiderman.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -53,6 +54,7 @@ Widget getDestinationWidget({Destination destination}) {
     case "SpiderMan" : return  SpiderManDemo();
     case "Pink" : return  PinkDemo();
     case "Business" : return  BusinessDemo();
+    case "PopUp" : return  PopUpDemo();
   }
   return Container();
 }
@@ -66,7 +68,8 @@ const List<Destination> allDestinations = <Destination>[
   Destination('Default', Icons.looks_one, Colors.teal),
   Destination('SpiderMan', Icons.looks_two, Colors.cyan),
   Destination('Pink', Icons.looks_3, Colors.orange),
-  Destination('Business', Icons.looks_4, Colors.blue)
+  Destination('Business', Icons.looks_4, Colors.blue),
+  Destination('PopUp', Icons.looks_6, Colors.deepPurple)
 ];
 
 

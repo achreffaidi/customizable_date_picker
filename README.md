@@ -2,7 +2,7 @@
 
 A Customizable_date_picker
 
-<img src="https://github.com/achreffaidi/customizable_date_picker/blob/master/doc/images/blue.gif" width="300"/>
+<div style="text-align:center"><img src="https://github.com/achreffaidi/customizable_date_picker/blob/master/doc/images/blue.gif" width="300"/></div>
 
 ## Features
 
@@ -49,7 +49,7 @@ CustomDatePickerController _controller = new CustomDatePickerController();
   }
 ```
 
-<img src="https://github.com/achreffaidi/customizable_date_picker/blob/master/doc/images/default.gif" width="300"/>
+<div style="text-align:center"><img src="https://github.com/achreffaidi/customizable_date_picker/blob/master/doc/images/default.gif" width="300"/></div>
 
 You can find the complete example in the [Example](https://github.com/achreffaidi/customizable_date_picker/tree/master/example) project.
 
@@ -78,9 +78,54 @@ You can specify how every part of the Widget should be built:
   }
 ```
 
-<img src="https://github.com/achreffaidi/customizable_date_picker/blob/master/doc/images/blue.gif" width="300"/>
+<div style="text-align:center"><img src="https://github.com/achreffaidi/customizable_date_picker/blob/master/doc/images/blue.gif" width="300"/></div>
 
-<img src="https://github.com/achreffaidi/customizable_date_picker/blob/master/doc/images/pink.gif" width="300"/>
+<div style="text-align:center"><img src="https://github.com/achreffaidi/customizable_date_picker/blob/master/doc/images/pink.gif" width="300"/></div>
+
+You can find the complete example in the [Example](https://github.com/achreffaidi/customizable_date_picker/tree/master/example) project.
+
+## PopUp using AlertDialog 
+
+```dart
+ void _showPopUp() {
+     showDialog(
+       context: context,
+       builder: (BuildContext context) {
+         // return object of type Dialog
+         return AlertDialog(
+           title: new Text("Date Picker"),
+           content: Card(
+             child: CustomDatePicker(
+               _controller,
+               dayItemBuilder: dayItemBuilder,
+               monthTitleBuilder: monthTitleBuilder,
+               headerBackgroundColor: Colors.black,
+               headerTextStyle: TextStyle(color: Colors.white,fontWeight: FontWeight.w700),
+             ),
+           ),
+           actions: <Widget>[
+             // usually buttons at the bottom of the dialog
+             new FlatButton(
+               child: new Text("Close"),
+               onPressed: () {
+                 Navigator.of(context).pop();
+               },
+             ),
+             new FlatButton(
+               child: new Text("Okay"),
+               onPressed: () {
+                 Navigator.of(context).pop();
+               },
+             ),
+           ],
+         );
+       },
+     );
+ 
+   }
+```
+
+<div style="text-align:center"><img src="https://github.com/achreffaidi/customizable_date_picker/blob/master/doc/images/popup.gif" width="300"/></div>
 
 You can find the complete example in the [Example](https://github.com/achreffaidi/customizable_date_picker/tree/master/example) project.
 
@@ -107,7 +152,7 @@ You can also set Data using
 controler.setDayData(DateTime date, dynamic data)
 ```
 
-<img src="https://github.com/achreffaidi/customizable_date_picker/blob/master/doc/images/dynamic.gif" width="300"/>
+<div style="text-align:center"><img src="https://github.com/achreffaidi/customizable_date_picker/blob/master/doc/images/dynamic.gif" width="300"/></div>
 
 You can find the complete example in the [Example](https://github.com/achreffaidi/customizable_date_picker/tree/master/example) project.
 
@@ -119,5 +164,5 @@ Please see the [Changelog](https://github.com/achreffaidi/customizable_date_pick
 
 Feel free to contribute to this project.
 
-If you find a bug or want a feature, but don't know how to fix/implement it, please fill an [issue](https://github.com/letsar/flutter_sticky_header/issues).  
-If you fixed a bug or implemented a new feature, please send a [pull request](https://github.com/letsar/flutter_sticky_header/pulls).
+If you find a bug or want a feature, but don't know how to fix/implement it, please fill an [issue](https://github.com/achreffaidi/customizable_date_picker/issues).  
+If you fixed a bug or implemented a new feature, please send a [pull request](https://github.com/achreffaidi/customizable_date_picker/pulls).
