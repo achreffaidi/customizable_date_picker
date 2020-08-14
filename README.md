@@ -2,7 +2,7 @@
 
 A Customizable_date_picker
 
-<div style="text-align:center"><img src="https://raw.githubusercontent.com/achreffaidi/customizable_date_picker/master/doc/images/blue.git" width="300"/></div>
+<div style="text-align:center"><img src="https://raw.githubusercontent.com/achreffaidi/customizable_date_picker/master/doc/images/blue.gif" width="300"/></div>
 
 ## Features
 
