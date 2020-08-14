@@ -28,9 +28,34 @@ import 'package:customizable_date_picker/customizable_date_picker.dart';
 
 For help getting started with Flutter, view the online [documentation](https://flutter.io/).
 
-## Simple Use
+## Attributes
+ 
+### CustomDatePicker
+|attribute|type|description|
+|--|--|--|
+|controller |CustomDatePickerController | Widget controller |
+|activeDayTextStyle |TextStyle | normal day color |
+|hiddenDayTextStyle |TextStyle | hidden day color |
+|headerTextStyle | TextStyle| TextStyle of days abbreviations| 
+|selectedDaysColor |Color | color of selected day |
+|headerBackgroundColor | Color| Color of the Header|
+|daysOfWeek |List<String> | Days abbreviations |
+|background |Widget | Background widget,could be anything, Image,Animations,Colors...|
+|dayItemBuilder | Widget Function(CustomDay day, int index)|day item builder|
+|monthTitleBuilder |Widget Function(DateTime date) |month Title Item Builder|
 
-You can place one or multiple `SliverStickyHeader`s inside a `CustomScrollView`.
+Warning:
+> One you chose to use a builder, most other styling attributes will be ignored.
+
+### CustomDatePickerController
+|attribute|type|description|
+|--|--|--|
+|start |DateTime | first month in the calendar |
+|end |DateTime | last month in the calendar |
+|generateCustomDay |CustomDay Function(DateTime firstDate, DateTime lastDate) | generate dynamic for each Day |
+
+
+## Simple Use
 
 ```dart
 CustomDatePickerController _controller = new CustomDatePickerController();

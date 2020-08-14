@@ -4,16 +4,16 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'models.dart';
 class CustomDatePicker extends StatefulWidget {
-  CustomDatePickerController controller;
-  TextStyle activeDayTextStyle;
-  TextStyle hiddenDayTextStyle;
-  TextStyle headerTextStyle;
-  Color selectedDaysColor;
-  Color headerBackgroundColor;
-  List<String> daysOfWeek;
-  Widget background;
-  Widget Function(CustomDay day, int index) dayItemBuilder;
-  Widget Function(DateTime date) monthTitleBuilder;
+  final CustomDatePickerController controller;
+  final TextStyle activeDayTextStyle;
+  final TextStyle hiddenDayTextStyle;
+  final TextStyle headerTextStyle;
+  final Color selectedDaysColor;
+  final Color headerBackgroundColor;
+  final List<String> daysOfWeek;
+  final Widget background;
+  final Widget Function(CustomDay day, int index) dayItemBuilder;
+  final Widget Function(DateTime date) monthTitleBuilder;
 
   CustomDatePicker(this.controller,
       {this.activeDayTextStyle = const TextStyle(fontWeight: FontWeight.w700),
