@@ -1,8 +1,7 @@
 # customizable_date_picker
 
 A Customizable_date_picker
-<img src="https://github.com/achreffaidi/customizable_date_picker/blob/master/doc/images/blue.gif" width="250" height="250"/>
-![Screenshot](https://github.com/achreffaidi/customizable_date_picker/blob/master/doc/images/blue.gif | width=150)
+<img src="https://github.com/achreffaidi/customizable_date_picker/blob/master/doc/images/blue.gif" width="300"/>
 
 ## Features
 
