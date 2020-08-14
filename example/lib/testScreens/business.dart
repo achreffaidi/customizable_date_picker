@@ -47,7 +47,7 @@ class _BusinessDemoState extends State<BusinessDemo> {
         child: Column(
           children: <Widget>[
             Container(
-              height: 800,
+              height: 450,
               child: Card(
                 child: CustomDatePicker(
                     _controller,

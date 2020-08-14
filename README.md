@@ -2,6 +2,8 @@
 
 A Customizable_date_picker
 
+![Screenshot](https://raw.githubusercontent.com/letsar/flutter_sticky_header/master/doc/images/sticky_header_all.gif)
+
 ## Features
 
 * Fully Customizable with Custom Builders.
