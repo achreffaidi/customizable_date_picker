@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 class Month {
   GlobalKey key;
   int numberOfDays;
@@ -6,15 +7,17 @@ class Month {
   DateTime firstDay;
   DateTime lastDay;
   List<CustomDay> days = new List();
-  CustomDay Function (DateTime date) generateCustomDay;
+  CustomDay Function(DateTime date) generateCustomDay;
 
-  Month(DateTime date,{CustomDay Function (DateTime date) dayGenerator,int firstDayOfWeek = 0}) {
+  Month(DateTime date,
+      {CustomDay Function(DateTime date) dayGenerator,
+      int firstDayOfWeek = 0}) {
     key = new GlobalKey();
-    generateCustomDay = dayGenerator??_defaultDayGenerator;
+    generateCustomDay = dayGenerator ?? _defaultDayGenerator;
     firstDay = DateTime(date.year, date.month, 1);
     lastDay = DateTime(date.year, date.month + 1, 0);
     weeksCount = DateTime(date.year, date.month + 1, 0).day;
-    generateDates(firstDay, lastDay,firstDayOfWeek);
+    generateDates(firstDay, lastDay, firstDayOfWeek);
     numberOfDays = days.length;
     weeksCount = numberOfDays % 7;
   }
@@ -22,16 +25,18 @@ class Month {
     int missingDays = firstDay.weekday - 1 - firstDayOfWeek;
     DateTime currentDay = firstDay.subtract(Duration(days: missingDays));
     while (
-    currentDay.isBefore(lastDay) || currentDay.isAtTheSameDayAs(lastDay)) {
+        currentDay.isBefore(lastDay) || currentDay.isAtTheSameDayAs(lastDay)) {
       for (int i = 0; i < 7; i++) {
         var day = generateCustomDay(currentDay);
-        day.hidden = currentDay.isBefore(firstDay) || currentDay.isAfter(lastDay) ;
+        day.hidden =
+            currentDay.isBefore(firstDay) || currentDay.isAfter(lastDay);
         days.add(day);
         currentDay = currentDay.add(Duration(days: 1));
       }
     }
   }
-  CustomDay _defaultDayGenerator(DateTime date) => CustomDay(date,null);
+
+  CustomDay _defaultDayGenerator(DateTime date) => CustomDay(date, null);
 }
 
 class CustomDay {

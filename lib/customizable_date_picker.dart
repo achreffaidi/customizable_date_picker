@@ -3,6 +3,7 @@ library customizable_date_picker;
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'models.dart';
+
 class CustomDatePicker extends StatefulWidget {
   final CustomDatePickerController controller;
   final TextStyle activeDayTextStyle;
@@ -17,14 +18,14 @@ class CustomDatePicker extends StatefulWidget {
 
   CustomDatePicker(this.controller,
       {this.activeDayTextStyle = const TextStyle(fontWeight: FontWeight.w700),
-        this.hiddenDayTextStyle = const TextStyle(fontWeight: FontWeight.w300),
-        this.headerTextStyle = const TextStyle(fontWeight: FontWeight.w700),
-        this.selectedDaysColor = Colors.blue,
-        this.headerBackgroundColor = Colors.white,
-        this.daysOfWeek = const ["MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"],
-        this.background,
-        this.dayItemBuilder,
-        this.monthTitleBuilder});
+      this.hiddenDayTextStyle = const TextStyle(fontWeight: FontWeight.w300),
+      this.headerTextStyle = const TextStyle(fontWeight: FontWeight.w700),
+      this.selectedDaysColor = Colors.blue,
+      this.headerBackgroundColor = Colors.white,
+      this.daysOfWeek = const ["MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"],
+      this.background,
+      this.dayItemBuilder,
+      this.monthTitleBuilder});
 
   @override
   _CustomDatePickerState createState() => _CustomDatePickerState();
@@ -80,8 +81,8 @@ class _CustomDatePickerState extends State<CustomDatePicker> {
               child: Container(
                 child: Column(
                   children: <Widget>[
-                    SizedBox(height: 50),
-                  ] +
+                        SizedBox(height: 50),
+                      ] +
                       controller._months
                           .map((e) => _getMonthWidget(e, []))
                           .toList(),
@@ -141,8 +142,8 @@ class _CustomDatePickerState extends State<CustomDatePicker> {
     }
     return Container(
         child: Column(
-          children: rows,
-        ));
+      children: rows,
+    ));
   }
 
   Widget _defaultDayItemBuilder(CustomDay day, int index) {
@@ -190,11 +191,11 @@ class _CustomDatePickerState extends State<CustomDatePicker> {
           child: Center(
               child: Container(
                   child: Text(
-                    day.date.day.toString(),
-                    style: day.hidden
-                        ? widget.hiddenDayTextStyle
-                        : widget.activeDayTextStyle,
-                  ))),
+            day.date.day.toString(),
+            style: day.hidden
+                ? widget.hiddenDayTextStyle
+                : widget.activeDayTextStyle,
+          ))),
         ),
       ),
     );
@@ -210,9 +211,9 @@ class _CustomDatePickerState extends State<CustomDatePicker> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: widget.daysOfWeek
                   .map((e) => Container(
-                  height: 50,
-                  child: Center(
-                      child: Text(
+                      height: 50,
+                      child: Center(
+                          child: Text(
                         e,
                         style: widget.headerTextStyle,
                       ))))
@@ -338,7 +339,8 @@ class CustomDatePickerController {
     }
     return false;
   }
-  void notify(){
+
+  void notify() {
     datePicker.notify();
   }
 }
